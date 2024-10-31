@@ -40,22 +40,6 @@ END;
 $$;
 
 
-CREATE OR REPLACE PROCEDURE product_rating_calc(product_id INTEGER)
-LANGUAGE 'plpgsql'
-AS $$
-BEGIN
-    IF EXISTS (SELECT 1 FROM ratings WHERE fk_product_id = product_id) THEN
-        UPDATE products
-        SET rating = (SELECT AVG(rating) FROM ratings WHERE fk_product_id = product_id)
-        WHERE pk_id = product_id;
-    END IF;
-
-    -- Commit para transações dentro do procedure
-    COMMIT;
-END;
-$$;
-
-
 
 
 
