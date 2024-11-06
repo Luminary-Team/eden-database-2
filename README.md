@@ -1,11 +1,11 @@
-<h1 align="center">SQL 2 - Projeto</h1>
+<h1 align="center">Database 2 - Projeto</h1>
 
 <p align="center">
   <strong>Disciplinas:</strong> Banco de Dados II & Modelagem de Dados (2º Ano)
 </p>
 
 <p align="center">
-  <strong>Integrantes:</strong> Mateus Gomes Oliveira
+  <strong>Integrante:</strong> Mateus Gomes Oliveira
 </p>
 
 <hr>
